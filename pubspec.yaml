@@ -1,0 +1,60 @@
+name: pdf_chatbot_offline
+description: Offline PDF chatbot with real on-device LLM
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI
+  cupertino_icons: ^1.0.6
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # Local Storage
+  sqflite: ^2.3.3
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
+  
+  # PDF Processing
+  syncfusion_flutter_pdf: ^24.2.9
+  file_picker: ^8.0.0
+  # flutter_gpt4all: ^0.0.4
+  
+  # LLM Integration - Multiple Options
+  # Option 1: Flutter-Gemma (recommended - lightweight, fast)
+  flutter_gemma: ^0.11.16
+  
+  # Option 2: Flutter-GPT4All (easiest, works on mobile)
+  #flutter_gpt4all: ^0.12.3
+  
+  # Option 3: llama_cpp_dart (more control, needs FFI setup)
+  llama_cpp_dart: ^0.1.0
+  
+  # Option 4: TensorFlow Lite (alternative approach)
+  # tflite_flutter: ^0.10.4
+  
+  # Vector Operations
+  vector_math: ^2.1.4
+  
+  # Utilities
+  intl: ^0.19.0
+  http: ^1.2.0  # For downloading models
+  flutter_markdown: ^0.7.1
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  # Assets for LLM models
+  assets:
+    - assets/models/
