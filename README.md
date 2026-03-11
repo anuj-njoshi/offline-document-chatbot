@@ -1,16 +1,15 @@
-# offline_document_chatbot
+Offline Document Chatbot is a Flutter application that enables users to interact with documents using natural language queries. The app runs completely offline by leveraging the Gemma large language model through the flutter_gemma package.
 
-A new Flutter project.
+Users can upload or load documents and ask questions about their content, and the chatbot processes the information locally on the device. This ensures privacy, low latency, and functionality even without an internet connection.
 
-## Getting Started
+Key Features
 
-This project is a starting point for a Flutter application.
+Fully offline AI document chat
 
-A few resources to get you started if this is your first Flutter project:
+Built with Flutter for cross-platform support
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Powered by Gemma LLM using flutter_gemma
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Private on-device document processing
+
+Simple conversational interface for document queries
